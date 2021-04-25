@@ -3,7 +3,8 @@
 #Preparations:
 #In Cmakelist   	set(OpenCV_DIR "C:/opencv/build") 	(already done )
 #Change the opencv folder name to "opencv", and move it to "C:\"
-#Download "openbr" through the link and move the folder to "C:\"	I suggest you to put both opencv and openbr folder in the "C:\"  otherwise you need to modify some dirs in the .bat
+#Download the whole folder through the link and rename it to be "openbr" before moving it to "C:\"
+#I suggest you to put both opencv and openbr folder in the "C:\"  otherwise you need to modify some dirs in the .bat
 #open the VS2019 x64 Cross Tools Command Prompt then execute shishi.bat
 
 #1. download opencv 
