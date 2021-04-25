@@ -2,10 +2,10 @@
 
 #Preparations:
 #In Cmakelist   	set(OpenCV_DIR "C:/opencv/build") 	(already done )
-#Change the opencv folder name to "opencv", and move it to "C:\"
+#Make sure you have donwloaded opencv and change its folder name to "opencv" before moving it to "C:\"
 #Download the whole folder through the link and rename it to be "openbr" before moving it to "C:\"
 #I suggest you to put both opencv and openbr folder in the "C:\"  otherwise you need to modify some dirs in the .bat
-#open the VS2019 x64 Cross Tools Command Prompt then execute shishi.bat
+#Open the VS2019 x64 Cross Tools Command Prompt then execute shishi.bat. All the command will run consecutively.
 
 #1. download opencv 
 cd C:\opencv\sources
@@ -29,7 +29,7 @@ cd C:\openbr
 mkdir msvc2019
 cd msvc2019
 cmake -G "Visual Studio 16 2019" -DCMAKE_PREFIX_PATH="C:/opencv/sources/msvc2019/install;C:/Qt/5.15.2/msvc2019_64" -DCMAKE_INSTALL_PREFIX="./install" -DBR_INSTALL_DEPENDENCIES=ON -DCMAKE_BUILD_TYPE=Release ..
-cmake --build . --config Release
+cmake --build . --config Release	#apply cmake build&install	 instead of nmake
 cmake --install ""
 
 #4. Hack OpenBR
