@@ -15,7 +15,6 @@ nmake install
 nmake clean
 
 @echo Please ensure you have downloaded and installed Qt to "C:\"(5.15.2 MSVC 2019 64-bit is applied here). 
-@echo You can download the compiler directly through the link and move the folder "msvc2019_64" to "C:\Qt\5.15.2”
 pause
 cd C:\openbr\openbr
 mkdir bin
