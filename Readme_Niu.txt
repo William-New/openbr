@@ -1,4 +1,4 @@
-#upload msvc2019_64, cmakelist 
+#update CMakelist	     upload shishi.bat, Readme_Niu
 
 #Preparations:
 #In Cmakelist   	set(OpenCV_DIR "C:/opencv/build") 	(already done )
@@ -20,8 +20,8 @@ nmake
 nmake install
 nmake clean
 
-#2.download and install Qt to "C:\"(5.15.2 MSVC 2019 64-bit is applied here). 
-#You can download the compiler directly through the link and move the folder "msvc2019_64" to "C:\Qt\5.15.2"
+#2.download and install Qt(5.15.2) to "C:\".
+#Remember that MSVC 2019 64-bit compiler is applied
 #copy the folder "bin" form "C:\opencv\sources\msvc2019\install\x86\vc16" to "C:\openbr\openbr"   	(already done)
 
 #3. install openbr
